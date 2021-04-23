@@ -1,11 +1,5 @@
 """
 Perform Cross Validation
-
-Model1 Architecture:
-
-    dgnet --> FC2 --> enc_dgnet -|--> FC2 --> synergy
-    exp   --> FC2 --> enc_exp   -|
-
 """
 
 
