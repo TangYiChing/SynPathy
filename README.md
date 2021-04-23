@@ -20,12 +20,12 @@ $ git clone https://github.com/TangYiChing/SynPathy
 # install SynPathy to a conda environment 
 $ pip install -r requirements.txt
 ```
-# How to run SynPath?
+# How to run SynPathy?
 
 ```{python}
 # case 1: for one cross validation run: optimze MSE through training, validate with Valid.pkl data and finally test on the hold-out Test.pkl data
 $ python ./script_run_model/PathComb.DGNet-DGNet-EXP.py -train ./dataset/train/Train.pkl -valid ./dataset/valid/Valid.pkl -test ./dataset/test/Test.pkl -norm tanh_norm -g 1 -m 1 -o model.cv0
 
-# case 2: for making prediction with pre-trained model
+# case 2: for making prediction with the pre-trained model
 $ python ./script_run_model/PathComb.DGNet-DGNet-EXP.py -train ./dataset/train/Train.pkl -valid ./dataset/valid/Valid.pkl -test ./dataset/test/Test.pkl -norm tanh_norm -g 1 -m 0 -pretrained model.cv0.saved_model.h5 -o model.cv0
 ```
