@@ -1,14 +1,14 @@
 # SynPathy: SYNergy prediction using Pathway
 
-## a. 
-
-
-## b. required packages
+## a. required packages
 1. Python=3.6.12
 2. keras=2.4.3
 3. tensorflow=2.2.0
 4. SHAP=0.37.0
 5. for other packages, see requirements.txt
+
+## b. example dataset
+dataset for one cross validation run is available at: https://zenodo.org/record/4716703#.YIM0Z5-SkaY
 
 # How to install SynPathy?
 
