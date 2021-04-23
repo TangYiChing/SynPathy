@@ -2,7 +2,7 @@
 
 ## SYNergy prediction using Pathway
 
-# How to install SynPathy?
+
 
 ## required packages
 1. Python=3.6.12
@@ -10,6 +10,8 @@
 3. tensorflow=2.2.0
 4. SHAP=0.37.0
 5. for other packages, see requirements.txt
+
+# How to install SynPathy?
 
 ```{python}
 
