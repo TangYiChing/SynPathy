@@ -8,7 +8,7 @@
 5. for other packages, see requirements.txt
 
 ## b. example dataset
-dataset for one cross validation run is available at: https://zenodo.org/record/4716703#.YIM0Z5-SkaY
+dataset for one cross validation run is available at: https://zenodo.org/record/5016011#.YNKNHBGSkaY
 
 # How to install SynPathy?
 
@@ -24,8 +24,8 @@ $ pip install -r requirements.txt
 
 ```{python}
 # case 1: for one cross validation run: optimze MSE through training, validate with Valid.pkl data and finally test on the hold-out Test.pkl data
-$ python ./script_run_model/PathComb.CHEM-CHEM-DGNet-DGNet-EXP.py -train ./dataset/train/Train.pkl -valid ./dataset/valid/Valid.pkl -test ./dataset/test/Test.pkl -norm tanh_norm -g 1 -m 1 -o model.cv0
+$ python ./script_run_model/PathComb.CHEM-CHEM-DGNet-DGNet-EXP.py -train ./dataset/train/TRAIN.pkl -valid ./dataset/valid/VALID.pkl -test ./dataset/test/TEST.pkl -norm tanh -g 1 -m 1 -o model.cv0
 
 # case 2: for making prediction with the pre-trained model
-$ python ./script_run_model/PathComb.CHEM-CHEM-DGNet-DGNet-EXP.py -train ./dataset/train/Train.pkl -valid ./dataset/valid/Valid.pkl -test ./dataset/test/Test.pkl -norm tanh_norm -g 1 -m 0 -pretrained model.cv0.saved_model.h5 -o model.cv0
+$ python ./script_run_model/PathComb.CHEM-CHEM-DGNet-DGNet-EXP.py -train ./dataset/train/TRAIN.pkl -valid ./dataset/valid/VALID.pkl -test ./dataset/test/TEST.pkl -norm tanh -g 1 -m 0 -pretrained model.cv0.saved_model.h5 -o model.cv0
 ```
