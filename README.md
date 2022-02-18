@@ -29,3 +29,6 @@ $ python ./script_run_model/PathComb.CHEM-CHEM-DGNet-DGNet-EXP.py -train ./datas
 # case 2: for making prediction with the pre-trained model
 $ python ./script_run_model/PathComb.CHEM-CHEM-DGNet-DGNet-EXP.py -train ./dataset/train/TRAIN.pkl -valid ./dataset/valid/VALID.pkl -test ./dataset/test/TEST.pkl -norm tanh -g 1 -m 0 -pretrained model.cv0.saved_model.h5 -o model.cv0
 ```
+# Reference
+
+1.Tang, Y.-C. & Gottlieb, A. SynPathy: Predicting Drug Synergy through Drug-Associated Pathways Using Deep Learning. Mol Cancer Res (2022) doi:10.1158/1541-7786.MCR-21-0735.
